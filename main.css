@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #FFFDFD;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section {
+    background: #F6CD61;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 4em;
+    text-transform: uppercase;
+}
+
+p {
+    color: black;
+    line-height: 1.5em;
+    font-size: 1.2rem;
+}
+
+.result {
+    display: none;
+    text-align: center;
+}
+
+form {
+    width: 100vw;
+    display: block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 30px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1em;
+    line-height: 2em;
+    text-transform: uppercase;
+}
+
+.col input,
+.col select {
+    width: 40vw;
+    padding: 15px;
+    font-size: 14px;
+    background: #23252f;
+    color: white;
+    border: solid 1px #464856;
+    outline: none;
+    border-radius: 3px;
+}
+
+button {
+    margin-top: 20px;
+    background: white;
+    color: #23252f;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.intro {
+    text-align: center;
+    padding: 1em 5em;
+    display: block;
+}
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: max(8vw, 1.5em);
+    }
+
+    p {
+        font-size: max(2vw, 0.8em);
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin: 0;
+    }
+
+    .col {
+        width: 100%;
+        padding: 0 2rem 0 2rem;
+    }
+
+    .col input,
+    .col select {
+        width: auto;
+    }
+
+    label {
+        font-size: max(1.4vw, 11px);
+    }
+
+    button {
+        font-size: max(2vw, 12px);
+        padding: max(10px, 1em);
+    }
+}

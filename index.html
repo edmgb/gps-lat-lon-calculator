@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS LAT/LON Calculator</title>
+    <meta name="description" content="Calculates the distance between two latitude and longitude coordinates in kilometers and
+                    nautical miles from decimal degrees (GPS coordinates) using the Haversine formula">
+    <meta name="author" content="e18s">
+    <!-- <link rel="icon" href="/favicon.ico">
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <section>
+        <div class="intro" id="intro">
+            <h1>GPS LAT/LON Calculator</h1>
+            <p>Calculates the distance between two latitude and longitude coordinates in kilometers and
+                nautical miles, from decimal degrees (GPS coordinates) using the <a
+                    href="https://en.wikipedia.org/wiki/Haversine_formula" target="_blank">Haversine formula.</a>
+            </p>
+        </div>
+        <div>
+            <div class="result" id="result">
+                <h1 id="result-value">Result:</h1>
+                <button id="new-calc">
+                    Calculate New Distance
+                </button>
+            </div>
+            <form action="" class="reg-form" id="calc-data">
+                <div class="row">
+                    <div class="col">
+                        <label for="lat1">
+                            latitude 1
+                        </label>
+                        <input type="text" name="lat1" id="lat1" placeholder="Enter latitude 1">
+                    </div>
+                    <div class="col">
+                        <label for="lng1">
+                            longitude 1
+                        </label>
+                        <input type="text" name="lng1" id="lng1" placeholder="Enter logitued 1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="lat2">
+                            latitude 2
+                        </label>
+                        <input type="text" name="lat2" id="lat2" placeholder="Enter latitude 2">
+                    </div>
+                    <div class="col">
+                        <label for="">
+                            longitude 2
+                        </label>
+                        <input type="text" name="lng2" id="lng2" placeholder="Enter longitude 2">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="lng2">
+                            Conversion unit
+                        </label>
+                        <select name="conversion" id="conversion">
+                            <option value="" disabled selected>Select</option>
+                            <option value="nm" selected>Nautical Miles</option>
+                            <option value="km">Kilometers</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <button type="submit">
+                            Calculate
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
